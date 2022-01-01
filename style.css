@@ -53,18 +53,13 @@ White: hsl(0, 0%, 100%)
     display: flex;
     flex-direction: column;
 
-
-
+    background-image: url("/images/bg-pattern-top-mobile.svg"), url("/images/bg-pattern-bottom-mobile.svg");
+    background-size: contain;
+    background-position: center;
 }
 
-.image-and-title img {
 
-    position: relative;
-    top: 200px;
-
-}
-
-.image-and-title p {
+.title h1 {
     font-size: 2.5rem;
     text-align: center;
     color: var(--text-color-magenta);
@@ -72,7 +67,7 @@ White: hsl(0, 0%, 100%)
     line-height: 2.5rem;
 }
 
-.introduction-paragraph {
+.title p {
     color: var(--text-color-dark-gray-magenta);
     text-align: center;
     line-height: 1.5rem;
@@ -233,4 +228,101 @@ White: hsl(0, 0%, 100%)
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1000px) {
+    .wrapper {
+        max-width: 1440px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 10rem;
+
+
+
+    }
+
+    .title {
+
+        flex-grow: 1;
+        flex-basis: 35%;
+
+    }
+
+    .title p {
+        text-align: left;
+    }
+
+    .title h1 {
+        text-align: left;
+    }
+
+    .star-ratings {
+
+        justify-content: center;
+
+
+        flex-basis: 65%;
+    }
+
+    .reviews {
+        flex-direction: row;
+        gap: 2rem;
+        width: 400px;
+        flex-shrink: 3;
+        height: 60px;
+        position: relative;
+        left: 30%;
+        padding-right: 3rem;
+        width: 515px;
+
+
+    }
+
+    .report-guru {
+        flex-direction: row;
+        gap: 2rem;
+        width: 400px;
+        flex-shrink: 3;
+        height: 60px;
+        position: relative;
+        left: 38%;
+        padding-right: 3rem;
+        width: 515px;
+    }
+
+    .besttech {
+        flex-direction: row;
+        gap: 2.5rem;
+        flex-shrink: 3;
+
+        height: 60px;
+        position: relative;
+        left: 45%;
+        padding-right: 3rem;
+        width: 515px;
+
+    }
+
+    .star-icons {
+        padding-top: 0;
+    }
+
+    .testimonials {
+
+        flex-basis: 100%;
+        flex-direction: row;
+        padding-bottom: 4.5rem;
+        gap: 2rem;
+    }
+
+    .irene {
+        position: relative;
+        top: 10%;
+    }
+
+    .anne {
+        position: relative;
+        top: 20%;
+    }
+
 }
